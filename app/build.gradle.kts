@@ -41,4 +41,10 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+
+    implementation(libs.firebase.auth)
+    implementation(platform(libs.firebase.bom.v3280))
+
+    implementation(libs.firebase.database)
+    implementation(libs.firebase.storage)
 }
