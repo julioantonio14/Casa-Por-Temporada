@@ -1,6 +1,7 @@
 package com.example.casaportemporada.activity.autenticacao;
 
 import android.os.Bundle;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -22,5 +23,16 @@ public class CriarContaActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        configCliques();
+        iniciaComponentes();
+    }
+
+    private void configCliques() {
+        findViewById(R.id.ib_voltar).setOnClickListener(view -> finish());
+    }
+
+    private void iniciaComponentes(){
+        TextView text_titulo = findViewById(R.id.text_titulo);
+        text_titulo.setText("Crie Sua Conta");
     }
 }

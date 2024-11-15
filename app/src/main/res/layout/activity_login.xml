@@ -38,6 +38,7 @@
                 android:padding="24dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
@@ -82,12 +83,13 @@
                         android:textColor="#9CD0FC" />
 
                     <TextView
+                        android:id="@+id/text_recuperar_conta"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="Esqueceu a Senha?"
                         android:textAlignment="textEnd"
-                        android:textColor="#9CD0FC"/>
+                        android:textColor="#9CD0FC" />
                 </LinearLayout>
             </LinearLayout>
 
