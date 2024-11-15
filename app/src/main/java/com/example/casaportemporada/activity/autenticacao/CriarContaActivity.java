@@ -1,6 +1,5 @@
 package com.example.casaportemporada.activity.autenticacao;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -11,23 +10,17 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.example.casaportemporada.R;
 
-public class LoginActivity extends AppCompatActivity {
+public class CriarContaActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_criar_conta);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        configCliques();
-    }
-
-    private void configCliques(){
-        findViewById(R.id.text_criar_conta).setOnClickListener(view ->startActivity(new Intent(this, CriarContaActivity.class)));
-
     }
 }
