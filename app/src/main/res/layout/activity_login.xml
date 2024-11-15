@@ -43,6 +43,7 @@
                 app:layout_constraintTop_toTopOf="parent">
 
                 <EditText
+                    android:id="@+id/edit_email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/bg_edit"
@@ -51,6 +52,7 @@
                     android:padding="16dp" />
 
                 <EditText
+                    android:id="@+id/edit_senha"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
@@ -66,6 +68,7 @@
                     android:background="@drawable/bg_btn"
                     android:text="Entrar"
                     android:textAllCaps="false"
+                    android:onClick="validaDados"
                     android:textColor="@color/white" />
 
                 <LinearLayout
@@ -91,6 +94,15 @@
                         android:textAlignment="textEnd"
                         android:textColor="#9CD0FC" />
                 </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/progressbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:indeterminateTint="@color/azul_padrao"
+                    android:visibility="gone"
+                    tools:visibility="visible"/>
             </LinearLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
