@@ -51,13 +51,12 @@ public class RecuperarContaActivity extends AppCompatActivity {
         FirebaseHelper.getAuth().sendPasswordResetEmail(email).addOnCompleteListener(
                 task -> {
                     if (task.isSuccessful()){
-                        progressBar.setVisibility(View.GONE);
                         Toast.makeText(this,"E-mail enviado com sucesso",Toast.LENGTH_SHORT).show();
                     }else{
-                        progressBar.setVisibility(View.GONE);
                         String error = task.getException().getMessage();
                         Toast.makeText(this,error,Toast.LENGTH_SHORT).show();
                     }
+                    progressBar.setVisibility(View.GONE);
                 }
         );
     }
