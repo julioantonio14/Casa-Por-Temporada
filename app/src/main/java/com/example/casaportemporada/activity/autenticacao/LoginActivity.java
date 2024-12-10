@@ -15,6 +15,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.example.casaportemporada.R;
+import com.example.casaportemporada.activity.FormAnuncioActivity;
 import com.example.casaportemporada.activity.MainActivity;
 import com.example.casaportemporada.helper.FirebaseHelper;
 
@@ -39,7 +40,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void configCliques(){
-        findViewById(R.id.text_criar_conta).setOnClickListener(view ->startActivity(new Intent(this, CriarContaActivity.class)));
+        findViewById(R.id.text_criar_conta).setOnClickListener(view ->startActivity(new Intent(this, FormAnuncioActivity.class)));
         findViewById(R.id.text_recuperar_conta).setOnClickListener(view -> startActivity(new Intent(this, RecuperarContaActivity.class)));
 
     }

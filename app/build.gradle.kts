@@ -47,4 +47,6 @@ dependencies {
 
     implementation(libs.firebase.database)
     implementation(libs.firebase.storage)
+
+    implementation("io.github.ParkSangGwon:tedpermission-normal:3.4.2")
 }
